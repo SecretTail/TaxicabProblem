@@ -2,25 +2,25 @@
 A project that introduces cognitive biases caused by intuition
 
 ### Coroutine
-    1. Create branch named develop from main
-    2. Create a branch to do functional work from develop
-    [3-6] repeat
-    3. Add -> Commit -> Push your code
-    4. Creating a pull request to develop
-    5. Merging a pull request to develop
-    6. Delete the feature-branch
-    7. If all workers have finished working on the page
-    8. Creating a pull request to main
-    9. Merging a pull request to main
-    10. Synchronize
+    1. Create feature branch according to Branch Naming Rule.
+    2. Add -> Commit -> Push your code
+    3. Create and merge feature to develop pull request by PR Rule #1
+    4. Create and merge develop to main pull request by PR Rule #2
+    5. Delete feature branch
 
-### Branch naming rule
-    1. If the branch to be created is the base for the page, create it with feature-(page name)-init
-    2. In other cases, it is created as feature-(page name)-function name.
+### Branch Naming Rule
+    1. When the branch for the page is first created,
+       create it with feature-(page name)-init
+       ex) feature-firstpage-init
+    2. In other cases
+       It is created as feature-(page name)-function name.
+       If the function name consists of two or more words, connect it using underbar(_).
+       ex) feature-firstpage-move_car
 
 ### PR Rule
-    1. When a pull request is made from a branch to develop, the merge is performed at the discretion of the individual.
-    2. When a pull request is made from develop to main, the merge is proceeded with the permission of all participants.
+    1. When the function is completed in the feature branch and a pull request is performed with develop,
+       code review or permission is obtained from other reviewers.
+    2. When the work on the page is finished, pull request from develop to main
 
 ### Conflict
     1. When a conflict occurs, it is handled in the branch that occurs.
